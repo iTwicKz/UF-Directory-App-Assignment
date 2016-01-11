@@ -17,7 +17,7 @@ var requestHandler = function(request, response) {
     console.log("404 thrown");
     response.status = 404;
     response.writeHead(404, {'Content-Type': 'text/plain'});
-    response.end('Page cannot be found');
+    response.end('Bad gateway error');
   }
 
   /*
