@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+
   </head>
   <body ng-app="directoryApp">
     <div class="container">
@@ -40,6 +41,19 @@
               Write an HTML form that adds new listings to the directory
 
             -->
+            <div ng-app="listings" ng-controller="ListingsController">
+              <form novalidate>
+                Add new function:<br>
+                <input type="text" ng-model="user.code">
+                <input type="text" ng-model="user.name">
+
+                <button ng-click="addListing(user)">RESET</button>
+
+              </form>
+              <p>master = {{user.code}}</p>
+
+            </div>
+
         </div>
         <div class="col-md-6">
           <div class="jumbotron">
