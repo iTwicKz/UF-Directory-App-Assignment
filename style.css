@@ -1,0 +1,195 @@
+#searchBar {
+  margin: 15px 10px;
+}
+
+body {
+  font-family: "Lato";
+  background-color: #F4F4F4;
+}
+
+.col-md-6 {
+  padding: 0;
+}
+
+.table-complete {
+  max-height: 400px;
+}
+
+h1 {
+}
+
+.fa {
+  position: fixed;
+  top: 5px;
+  right: 80px;
+  margin-top: 20px;
+  font-size: 50px !important;
+  z-index: 10 !important;
+
+}
+
+.fa-plus-circle {
+  transition-property: color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+
+.fa-plus-circle:hover {
+  color: #5187ff;
+}
+
+.btn-default {
+  background-color: #5187ff;
+  width: 100%;
+  border-radius: 0px;
+  color: white;
+  border: 0px;
+  outline: none;
+}
+
+
+
+.adding-form {
+  opacity: 1;
+  position: fixed;
+  width: 250px;
+  right: 160px;
+  font-size: 16px;
+  background-color: white;
+  z-index: 10 !important;
+  top: 40px;
+  border-radius: 4px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 3px 37px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 3px 37px 0px rgba(0,0,0,0.2);
+box-shadow: 0px 3px 37px 0px rgba(0,0,0,0.2);
+}
+
+/*.fa:hover .adding-form {
+  opacity: 1;
+}*/
+
+input {
+  padding: 4px;
+  margin: 6px;
+  border: 0px;
+  border-bottom: 1px solid gray;
+  border-color: gray;
+  outline: none;
+  padding-bottom: 5px;
+}
+
+#popover-head {
+  width: 200px;
+}
+
+strong {
+  font-size: 20px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.details {
+  padding: 10px;
+}
+
+h2 {
+  margin-top: 0;
+  color: #5187ff;
+}
+
+.tableWrapper {
+  max-height: 400px;
+  overflow: auto;
+  width: 87vw;
+  padding: 0;
+  transition-property: width;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  margin-right: 50px;
+}
+
+.table-complete:hover .tableWrapper{
+  width: 45vw;
+}
+
+.fa-times-circle {
+  font-size: 2px;
+}
+
+.delete {
+  border: 0px;
+  width: 24px;
+  border-radius: 25px;
+  color: white;
+  height: auto;
+  opacity: 0;
+  transition-property: opacity, background-color, font-size;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  outline: none;
+}
+
+
+
+.detailed-tab:hover .delete {
+  background-color: #5187ff;
+  height: auto;
+  width: 24px;
+  opacity: 1;
+
+}
+
+.delete:hover {
+  background-color: red !important;
+  font-size: 16px;
+}
+
+/*.tableWrapper {
+  max-height: 400px;
+  overflow: auto;
+  width: 45vw;
+  padding: 0;
+
+  margin-right: 50px;
+}*/
+
+.table-complete:hover .tableWrapper{
+}
+
+tr {
+  white-space: nowrap;
+}
+
+.jumbotron {
+  padding: 10px !important;
+  position: fixed;
+  right: -100%;
+  width: 40vw;
+  transition-property: right;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+
+}
+
+/*.jumbotron {
+  padding: 10px !important;
+  position: fixed;
+  right: -100%;
+  width: 40vw;
+  right: 50px;
+
+  opacity: 1;
+
+
+
+}*/
+
+.table-complete:hover .jumbotron {
+  right: 50px;
+
+  opacity: 1;
+
+}
