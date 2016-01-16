@@ -6,18 +6,21 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
       coordinates: {}
     };
 
+
     $scope.addListing = function() {
-      var newListingToInsert = {
-        name: $scope.newListing.name,
-        code: $scope.newListing.code,
-        address: $scope.newListing.address,
-        coordinates: {
-          latitude: $scope.newListing.coordinates.latitude,
-          longitude: $scope.newListing.coordinates.longitude
-        }
-      }
-      $scope.listings.push(newListingToInsert);
-      clearForm();
+
+
+           var newListingToInsert = {
+             name: $scope.newListing.name,
+             code: $scope.newListing.code,
+             address: $scope.newListing.address,
+             coordinates: {
+               latitude: $scope.newListing.coordinates.latitude,
+               longitude: $scope.newListing.coordinates.longitude
+             }
+           }
+           $scope.listings.push(newListingToInsert);
+           clearForm();
     };
 
     $scope.deleteListing = function(index) {
